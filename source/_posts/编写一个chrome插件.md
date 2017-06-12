@@ -6,18 +6,18 @@ tags: javascript
 应公司要求，需要给公司测试写一个chrome插件来实现自动化，经查询与摸索，插件很快就完成了，下面对于chrome插件编写进行简单描述
 
 # 编写chrome插件 #
->##### 引入:
+>## 引入:
 >[chrome开发文档](https://developer.chrome.com/extensions)
 >
 >[360翻译文档](http://open.chrome.360.cn/extension_dev/overview.html)  ---- 只做为借鉴使用
 
 >[Chrome扩展及应用开发--电子书](http://www.ituring.com.cn/minibook/950)
 
-### 进入扩展程序
+## 进入扩展程序
 1. chrome  ----  chrome://extensions
 2. 360  ----  se://extensions
 
-### 查看扩展插件源码
+## 查看扩展插件源码
 1. chrome  ---- chrome://version
 2. 360  ---- se://version
 
@@ -27,9 +27,9 @@ tags: javascript
 进入红色标注的文档地址，找到extension文件夹并进入，里面就是本机的chrome插件库（360同上）
 
 ## 进入正题
-### 编写chrom插件 [Getting Started](https://developer.chrome.com/extensions/getstarted)
+<p>编写chrom插件 [Getting Started](https://developer.chrome.com/extensions/getstarted)<p>
 
-##### 一、配置入口文件 manifest.json`
+### 一、配置入口文件 manifest.json`
 正如目前每个前端工具类似，在编写chrome插件之前也需要在根目录下添加一个入口文件，名称必须为manifest.json
 
 	{
@@ -247,17 +247,17 @@ tags: javascript
 [Chrome Platform APIs]("https://developer.chrome.com/extensions/api_index")
 
 
-##### 调试
+## 调试
 浏览器访问：chrome-extension://<插件ID>/插件入口html文件
 
-#### 注意：
+## 注意：
 1. 不可使用内联js
 2. manifes.json文件为json文件，再打包上传chrome商店时，不可包含注释和中文
 
 
-#### 写一个chrome插件demo
+# 写一个chrome插件demo
 关于浏览器加载时间的插件
-1、创建并配置manifest.json文件
+## 创建并配置manifest.json文件
  ```
 { "name": "Test",
   "manifest_version": 2,
@@ -274,7 +274,7 @@ tags: javascript
    }
 }
 ```
-2、这里既然用到了devtools，编写devtools.js
+## 这里既然用到了devtools，编写devtools.js
 ```
 chrome.devtools.panels.create('Test', '/images/icon16.png', '/demo1.html', function(extensionPanel) {
     var _window; // Going to hold the reference to panel.html's `window`
@@ -292,7 +292,7 @@ chrome.devtools.panels.create('Test', '/images/icon16.png', '/demo1.html', funct
     });
 });
 ```
-3、需要用到background.js
+## 需要用到background.js
 ```
 var ports = [],
     datas = [];
@@ -314,7 +314,7 @@ chrome.runtime.onMessage.addListener(function(msg) {
     localStorage["domains"] = JSON.stringify(datas);
 });
 ```
-4、写html文件
+## 写html文件
 ```
 <!DOCTYPE html>
 <html>
@@ -339,6 +339,6 @@ chrome.runtime.onMessage.addListener(function(msg) {
 
 ![www.baidu.com加载分析图](http://upload-images.jianshu.io/upload_images/3104888-26c1f0f8943e001e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###### 对于该插件我没有优化，只是做了实验性demo，感兴趣的朋友可以深入尝试，例如：印象笔记的剪藏插件，就是一款很好的插件
+对于该插件我没有优化，只是做了实验性demo，感兴趣的朋友可以深入尝试，例如：印象笔记的剪藏插件，就是一款很好的插件
 
 >注：以上内容版权所有，作者：K丶Aionro，如有转载，请注明出处！谢谢！

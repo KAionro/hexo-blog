@@ -3,17 +3,17 @@ title: event.Target 和 event.currentTarget
 date: 2016-08-12 17:16:27
 tags: javascript
 ---
-###event.target
+### event.target
 
 >This property of event objects is the object the event was dispatched on. It is different than event.currentTarget when the event handler is called in bubbling or capturing phase of the event.
 
-###event.currentTarget
+### event.currentTarget
 >Identifies the current target for the event, as the event traverses the DOM. It always refers to the element the event handler has been attached to as opposed to event.target which identifies the element on which the event occurred.
 
 读定义总是很绕，要彻底了解这两者的区别，我们要先了解浏览器中事件传递的机制冒泡和捕获。
 
 
-###冒泡和捕获
+### 冒泡和捕获
 在页面中点击一个元素，事件是从这个元素的祖先元素中逐层传递下来的，这个阶段为事件的捕获阶段。当事件传递到这个元素之后，又会把事件逐成传递回去，直到根元素为止，这个阶段是事件的冒泡阶段。
 ![捕获和冒泡](http://upload-images.jianshu.io/upload_images/3104888-d88d6dd1bf1facd6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 我们为一个元素绑定一个点击事件的时候，可以指定是要在捕获阶段绑定或者换在冒泡阶段绑定。 当`addEventListener`的第三个参数为`true`的时候，代表是在捕获阶段绑定，当第三个参数为`false`或者为空的时候，代表在冒泡阶段绑定。

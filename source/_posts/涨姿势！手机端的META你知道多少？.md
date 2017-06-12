@@ -3,11 +3,11 @@ title: 涨姿势！手机端的META你知道多少？
 date: 2016-12-26 11:06:37
 tags: html
 ---
-**Web 前端工具分享：**
+## Web 前端工具分享：
 [《11款超赞的浏览器兼容性测试工具》](http://www.uisdc.com/browser-compatibility-testing-tool)
 [《10款让WEB前端开发人员更轻松的实用工具》](http://www.uisdc.com/let-designers-easily-tool-10)
 
-**一、[天猫](http://m.tmall.com/)**
+## 一、[天猫](http://m.tmall.com/)
 ````
 <title>天猫触屏版</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -18,7 +18,7 @@ tags: html
 <meta content="telephone=no" name="format-detection">
 ````
 
-**二、[淘宝](http://m.taobao.com/)**
+## 二、[淘宝](http://m.taobao.com/)
 ````
 <title>淘宝网触屏版</title>
 <meta charset="utf-8">
@@ -34,14 +34,14 @@ tags: html
 <meta name="description" content="">
 ````
 
-**三、[京东](http://m.jd.com/)**
+## 三、[京东](http://m.jd.com/)
 ````
 <title> 京东 - 手机版 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
 <meta name="format-detection" content="telephone=no">
 <meta name="Keywords" content="手机购物,WAP商城,日用百货,3C家电,汽车用品"><meta name="description" content="京东手机版提供了包括数码、家电、手机、电脑配件、网络产品、日用百货等数万种商品，手机快捷购物，就上京东手机版。">
 ````
-**四、[网易](http://3g.163.com/)**
+## 四、[网易](http://3g.163.com/)
 ````
 <title>手机网易网</title>
 <meta charset="UTF-8">
@@ -49,7 +49,7 @@ tags: html
 <meta name="apple-itunes-app" content="app-id=425349261">
 <meta name="apple-mobile-web-app-capable" content="yes">
 ````
-**五、[百度](http://m.baidu.com/)**
+## 五、[百度](http://m.baidu.com/)
 
 ````
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -82,11 +82,12 @@ user-scalable - 用户是否可以手动缩放
 ````
 第四个meta标签表示：告诉设备忽略将页面中的数字识别为电话号码。
 
-**参考：**
+## 参考：
 1、[百度百科](http://baike.baidu.com/link?url=LTcOyZlI6Mz6LzeVwSjxA5tJjZKxUchfLBm5Rgt2Xg9bKOp0ewAq9VoHxaWPYbG0)[meta](http://baike.baidu.com/link?url=LTcOyZlI6Mz6LzeVwSjxA5tJjZKxUchfLBm5Rgt2Xg9bKOp0ewAq9VoHxaWPYbG0)
 2、[手机网站前端设计](http://www.cnblogs.com/xiaoyusmile/archive/2011/11/15/2249818.html)
 3、[手机网页制作的认识（有关meta标签）](http://blog.163.com/yin_1989/blog/static/1749132082013071924352/)
 4、[手机端的一些标准](http://hi.baidu.com/shuogexiaohehe/item/b6a06648c98c23f0c0a5920e)
 5、[HTML <meta> 标签](http://www.w3school.com.cn/tags/tag_meta.asp)
  
-**原文地址：**[cnblogs](http://www.cnblogs.com/kuikui/p/3590673.html)
+## 原文地址：
+[cnblogs](http://www.cnblogs.com/kuikui/p/3590673.html)
