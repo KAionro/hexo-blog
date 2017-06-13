@@ -244,4 +244,4 @@ implements,interface,let,package,private,protected,public,static,yield,class,enu
 
  [jshint官网](http://jshint.com/ "jshint")
 
->如需转载，请注明出处！
+ >注：以上内容版权所有，作者：K丶Aionro，如有转载，请注明出处！谢谢！
